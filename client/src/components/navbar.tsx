@@ -18,23 +18,9 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleNavigation = (item: { name: string; path?: string; id?: string }) => {
+  const handleNavigation = (item: { name: string; path: string }) => {
     setIsMobileMenuOpen(false);
-    
-    if (item.path) {
-      window.location.href = item.path;
-    } else if (item.id) {
-      if (location === "/" || location === "") {
-        // If on home page, scroll to section
-        const element = document.getElementById(item.id);
-        if (element) {
-          element.scrollIntoView({ behavior: "smooth" });
-        }
-      } else {
-        // If on other page, navigate to home then scroll
-        window.location.href = `/#${item.id}`;
-      }
-    }
+    window.location.href = item.path;
   };
 
   return (
@@ -69,8 +55,7 @@ export default function Navbar() {
                 { name: "Home", path: "/" },
                 { name: "About", path: "/about" },
                 { name: "Services", path: "/services" },
-                { name: "Testimonials", id: "testimonials" },
-                { name: "Contact", id: "contact" },
+                { name: "Contact", path: "/contact" },
               ].map((item) => (
                 <motion.button
                   key={item.name}
@@ -93,7 +78,7 @@ export default function Navbar() {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Button
-              onClick={() => handleNavigation({ name: "Contact", id: "contact" })}
+              onClick={() => handleNavigation({ name: "Contact", path: "/contact" })}
               className="gradient-bg text-white hover:scale-105 transform transition-all duration-300"
             >
               Book Consultation
@@ -126,8 +111,7 @@ export default function Navbar() {
               { name: "Home", path: "/" },
               { name: "About", path: "/about" },
               { name: "Services", path: "/services" },
-              { name: "Testimonials", id: "testimonials" },
-              { name: "Contact", id: "contact" },
+              { name: "Contact", path: "/contact" },
             ].map((item) => (
               <button
                 key={item.name}
@@ -139,7 +123,7 @@ export default function Navbar() {
             ))}
             <div className="pt-2">
               <Button
-                onClick={() => handleNavigation({ name: "Contact", id: "contact" })}
+                onClick={() => handleNavigation({ name: "Contact", path: "/contact" })}
                 className="gradient-bg text-white w-full"
               >
                 Book Consultation

@@ -8,6 +8,12 @@ This is a modern, responsive business website for RiteFit.AI, a talent and techn
 
 Preferred communication style: Simple, everyday language.
 
+## Recent Changes
+
+- **July 11, 2025**: Added dedicated Contact page with clickable phone/email links
+- **July 11, 2025**: Removed testimonials link from header navigation
+- **July 11, 2025**: Updated navigation to use dedicated pages for all links (Home, About, Services, Contact)
+
 ## System Architecture
 
 ### Frontend Architecture
@@ -37,6 +43,7 @@ The application uses two main tables:
 - **Landing Page**: Single-page application with multiple sections
 - **About Page**: Dedicated page with company mission, vision, values, and statistics
 - **Services Page**: Detailed service descriptions with features, benefits, and process
+- **Contact Page**: Dedicated contact page with clickable phone/email links and contact form
 - **Hero Section**: Animated text and call-to-action
 - **Services Section**: Four main service offerings with descriptions
 - **About Section**: Expertise showcase with animated progress bars
