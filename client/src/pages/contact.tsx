@@ -34,79 +34,6 @@ export default function Contact() {
         </section>
       </ScrollReveal>
 
-      {/* Contact Info Section */}
-      <ScrollReveal>
-        <section className="py-16 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-              {/* Contact Information */}
-              <div className="space-y-8">
-                <div>
-                  <h2 className="text-3xl font-bold text-gray-900 mb-8">Contact Info</h2>
-                  <div className="space-y-6">
-                    {/* Phone Numbers */}
-                    <motion.div
-                      className="flex items-center space-x-4 p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
-                      whileHover={{ scale: 1.02 }}
-                    >
-                      <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                        <Phone className="w-6 h-6 text-blue-600" />
-                      </div>
-                      <div>
-                        <p className="text-gray-500 text-sm">Phone</p>
-                        <a
-                          href="tel:+918008256789"
-                          className="text-lg font-semibold text-gray-900 hover:text-blue-600 transition-colors"
-                        >
-                          +91 8008256789
-                        </a>
-                      </div>
-                    </motion.div>
-
-                    <motion.div
-                      className="flex items-center space-x-4 p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
-                      whileHover={{ scale: 1.02 }}
-                    >
-                      <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                        <Phone className="w-6 h-6 text-blue-600" />
-                      </div>
-                      <div>
-                        <p className="text-gray-500 text-sm">Mobile</p>
-                        <a
-                          href="tel:+919176690330"
-                          className="text-lg font-semibold text-gray-900 hover:text-blue-600 transition-colors"
-                        >
-                          +91 9176690330
-                        </a>
-                      </div>
-                    </motion.div>
-
-                    {/* Email */}
-                    <motion.div
-                      className="flex items-center space-x-4 p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
-                      whileHover={{ scale: 1.02 }}
-                    >
-                      <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                        <Mail className="w-6 h-6 text-blue-600" />
-                      </div>
-                      <div>
-                        <p className="text-gray-500 text-sm">Email</p>
-                        <a
-                          href="mailto:rameshyb@ritefit.ai"
-                          className="text-lg font-semibold text-gray-900 hover:text-blue-600 transition-colors"
-                        >
-                          rameshyb@ritefit.ai
-                        </a>
-                      </div>
-                    </motion.div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </ScrollReveal>
-
       {/* Contact Form Section */}
       <ScrollReveal>
         <section className="py-16 px-4 sm:px-6 lg:px-8">
@@ -114,6 +41,68 @@ export default function Contact() {
             <div className="bg-white rounded-lg shadow-lg p-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Send us a Message</h2>
               <ContactForm />
+            </div>
+          </div>
+        </section>
+      </ScrollReveal>
+
+      {/* Contact Info Section */}
+      <ScrollReveal>
+        <section className="py-16 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-gray-900 mb-8">Contact Info</h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Phone Numbers */}
+              <motion.div
+                className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
+                whileHover={{ scale: 1.02 }}
+              >
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                  <Phone className="w-8 h-8 text-blue-600" />
+                </div>
+                <p className="text-gray-500 text-sm mb-2">Phone</p>
+                <a
+                  href="tel:+918008256789"
+                  className="text-lg font-semibold text-gray-900 hover:text-blue-600 transition-colors"
+                >
+                  +91 8008256789
+                </a>
+              </motion.div>
+
+              <motion.div
+                className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
+                whileHover={{ scale: 1.02 }}
+              >
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                  <Phone className="w-8 h-8 text-blue-600" />
+                </div>
+                <p className="text-gray-500 text-sm mb-2">Mobile</p>
+                <a
+                  href="tel:+919176690330"
+                  className="text-lg font-semibold text-gray-900 hover:text-blue-600 transition-colors"
+                >
+                  +91 9176690330
+                </a>
+              </motion.div>
+
+              {/* Email */}
+              <motion.div
+                className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
+                whileHover={{ scale: 1.02 }}
+              >
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                  <Mail className="w-8 h-8 text-blue-600" />
+                </div>
+                <p className="text-gray-500 text-sm mb-2">Email</p>
+                <a
+                  href="mailto:rameshyb@ritefit.ai"
+                  className="text-lg font-semibold text-gray-900 hover:text-blue-600 transition-colors"
+                >
+                  rameshyb@ritefit.ai
+                </a>
+              </motion.div>
             </div>
           </div>
         </section>
