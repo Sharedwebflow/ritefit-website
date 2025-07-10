@@ -35,13 +35,16 @@ The application uses two main tables:
 
 ### Frontend Components
 - **Landing Page**: Single-page application with multiple sections
+- **About Page**: Dedicated page with company mission, vision, values, and statistics
+- **Services Page**: Detailed service descriptions with features, benefits, and process
 - **Hero Section**: Animated text and call-to-action
 - **Services Section**: Four main service offerings with descriptions
 - **About Section**: Expertise showcase with animated progress bars
 - **Testimonials**: Carousel of client testimonials
 - **Stats Section**: Animated counters for key metrics
+- **Contact Form**: Professional contact form with validation and submission
 - **Contact Section**: Call-to-action with contact information
-- **Navbar**: Responsive navigation with smooth scrolling
+- **Navbar**: Responsive navigation with page routing and smooth scrolling
 - **Footer**: Company information and social links
 
 ### Animation Features

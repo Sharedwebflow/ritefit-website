@@ -2,10 +2,12 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { Link, useLocation } from "wouter";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [location] = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,12 +18,23 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+  const handleNavigation = (item: { name: string; path?: string; id?: string }) => {
     setIsMobileMenuOpen(false);
+    
+    if (item.path) {
+      window.location.href = item.path;
+    } else if (item.id) {
+      if (location === "/" || location === "") {
+        // If on home page, scroll to section
+        const element = document.getElementById(item.id);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      } else {
+        // If on other page, navigate to home then scroll
+        window.location.href = `/#${item.id}`;
+      }
+    }
   };
 
   return (
@@ -36,31 +49,32 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <motion.div
-              className="flex items-center cursor-pointer"
-              whileHover={{ scale: 1.05 }}
-              onClick={() => scrollToSection("home")}
-            >
-              <div className="w-10 h-10 gradient-bg rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">R</span>
-              </div>
-              <span className="ml-2 text-xl font-bold text-gray-800">RiteFit.AI</span>
-            </motion.div>
+            <Link href="/">
+              <motion.div
+                className="flex items-center cursor-pointer"
+                whileHover={{ scale: 1.05 }}
+              >
+                <div className="w-10 h-10 gradient-bg rounded-lg flex items-center justify-center">
+                  <span className="text-white font-bold text-xl">R</span>
+                </div>
+                <span className="ml-2 text-xl font-bold text-gray-800">RiteFit.AI</span>
+              </motion.div>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               {[
-                { name: "Home", id: "home" },
-                { name: "About", id: "about" },
-                { name: "Services", id: "services" },
+                { name: "Home", path: "/" },
+                { name: "About", path: "/about" },
+                { name: "Services", path: "/services" },
                 { name: "Testimonials", id: "testimonials" },
                 { name: "Contact", id: "contact" },
               ].map((item) => (
                 <motion.button
                   key={item.name}
-                  onClick={() => scrollToSection(item.id)}
+                  onClick={() => handleNavigation(item)}
                   className="relative text-gray-800 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-300"
                   whileHover={{ scale: 1.05 }}
                 >
@@ -79,7 +93,7 @@ export default function Navbar() {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Button
-              onClick={() => scrollToSection("contact")}
+              onClick={() => handleNavigation({ name: "Contact", id: "contact" })}
               className="gradient-bg text-white hover:scale-105 transform transition-all duration-300"
             >
               Book Consultation
@@ -109,15 +123,15 @@ export default function Navbar() {
         >
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {[
-              { name: "Home", id: "home" },
-              { name: "About", id: "about" },
-              { name: "Services", id: "services" },
+              { name: "Home", path: "/" },
+              { name: "About", path: "/about" },
+              { name: "Services", path: "/services" },
               { name: "Testimonials", id: "testimonials" },
               { name: "Contact", id: "contact" },
             ].map((item) => (
               <button
                 key={item.name}
-                onClick={() => scrollToSection(item.id)}
+                onClick={() => handleNavigation(item)}
                 className="text-gray-800 hover:text-blue-600 block px-3 py-2 text-base font-medium transition-colors duration-300"
               >
                 {item.name}
@@ -125,7 +139,7 @@ export default function Navbar() {
             ))}
             <div className="pt-2">
               <Button
-                onClick={() => scrollToSection("contact")}
+                onClick={() => handleNavigation({ name: "Contact", id: "contact" })}
                 className="gradient-bg text-white w-full"
               >
                 Book Consultation
