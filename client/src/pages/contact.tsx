@@ -1,11 +1,15 @@
 import { motion } from "framer-motion";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail } from "lucide-react";
 import ScrollReveal from "@/components/scroll-reveal";
 import ContactForm from "@/components/contact-form";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 
 export default function Contact() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white pt-20">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white">
+      <Navbar />
+      <div className="pt-20">
       {/* Header Section */}
       <ScrollReveal>
         <section className="py-20 px-4 sm:px-6 lg:px-8">
@@ -97,32 +101,19 @@ export default function Contact() {
                     </motion.div>
                   </div>
                 </div>
-
-                {/* Office Hours */}
-                <div className="bg-white rounded-lg shadow-sm p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Office Hours</h3>
-                  <div className="space-y-2 text-gray-600">
-                    <div className="flex justify-between">
-                      <span>Monday - Friday</span>
-                      <span>9:00 AM - 6:00 PM</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Saturday</span>
-                      <span>10:00 AM - 4:00 PM</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Sunday</span>
-                      <span>Closed</span>
-                    </div>
-                  </div>
-                </div>
               </div>
+            </div>
+          </div>
+        </section>
+      </ScrollReveal>
 
-              {/* Contact Form */}
-              <div className="bg-white rounded-lg shadow-lg p-8">
-                <h2 className="text-3xl font-bold text-gray-900 mb-8">Send us a Message</h2>
-                <ContactForm />
-              </div>
+      {/* Contact Form Section */}
+      <ScrollReveal>
+        <section className="py-16 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white rounded-lg shadow-lg p-12">
+              <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Send us a Message</h2>
+              <ContactForm />
             </div>
           </div>
         </section>
@@ -172,6 +163,8 @@ export default function Contact() {
           </div>
         </section>
       </ScrollReveal>
+      </div>
+      <Footer />
     </div>
   );
 }
