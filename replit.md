@@ -10,9 +10,11 @@ Preferred communication style: Simple, everyday language.
 
 ## Recent Changes
 
+- **July 11, 2025**: Added Academy page with comprehensive training program details from PDF document
+- **July 11, 2025**: Updated navigation to include Academy tab in both desktop and mobile menus
 - **July 11, 2025**: Added dedicated Contact page with clickable phone/email links
 - **July 11, 2025**: Removed testimonials link from header navigation
-- **July 11, 2025**: Updated navigation to use dedicated pages for all links (Home, About, Services, Contact)
+- **July 11, 2025**: Updated navigation to use dedicated pages for all links (Home, About, Services, Academy, Contact)
 
 ## System Architecture
 
@@ -43,6 +45,7 @@ The application uses two main tables:
 - **Landing Page**: Single-page application with multiple sections
 - **About Page**: Dedicated page with company mission, vision, values, and statistics
 - **Services Page**: Detailed service descriptions with features, benefits, and process
+- **Academy Page**: Comprehensive training program overview with curriculum details, pricing, and enrollment information
 - **Contact Page**: Dedicated contact page with clickable phone/email links and contact form
 - **Hero Section**: Animated text and call-to-action
 - **Services Section**: Four main service offerings with descriptions

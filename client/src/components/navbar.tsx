@@ -55,6 +55,7 @@ export default function Navbar() {
                 { name: "Home", path: "/" },
                 { name: "About", path: "/about" },
                 { name: "Services", path: "/services" },
+                { name: "Academy", path: "/academy" },
                 { name: "Contact", path: "/contact" },
               ].map((item) => (
                 <motion.button
@@ -111,6 +112,7 @@ export default function Navbar() {
               { name: "Home", path: "/" },
               { name: "About", path: "/about" },
               { name: "Services", path: "/services" },
+              { name: "Academy", path: "/academy" },
               { name: "Contact", path: "/contact" },
             ].map((item) => (
               <button
