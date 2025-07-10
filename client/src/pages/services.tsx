@@ -3,7 +3,7 @@ import Footer from "@/components/footer";
 import FloatingElements from "@/components/floating-elements";
 import ScrollReveal from "@/components/scroll-reveal";
 import SplitText from "@/components/split-text";
-import ContactForm from "@/components/contact-form";
+
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -358,7 +358,6 @@ export default function Services() {
         </div>
       </section>
 
-      <ContactForm />
       <Footer />
     </div>
   );
