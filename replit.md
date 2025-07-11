@@ -10,6 +10,9 @@ Preferred communication style: Simple, everyday language.
 
 ## Recent Changes
 
+- **July 11, 2025**: Added official RiteFit.AI logo to navbar and footer
+- **July 11, 2025**: Applied AI-themed textured backgrounds across all pages with alternating patterns
+- **July 11, 2025**: Implemented new blue/teal color palette throughout the website
 - **July 11, 2025**: Added Academy page with comprehensive training program details from PDF document
 - **July 11, 2025**: Updated navigation to include Academy tab in both desktop and mobile menus
 - **July 11, 2025**: Added dedicated Contact page with clickable phone/email links

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Facebook, Instagram, Linkedin, Mail, Phone, Globe } from "lucide-react";
+import logoPath from "@assets/image_1752256527444.png";
 
 export default function Footer() {
   return (
@@ -9,10 +10,11 @@ export default function Footer() {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center mb-4">
-              <div className="w-10 h-10 gradient-bg rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">R</span>
-              </div>
-              <span className="ml-2 text-xl font-bold">RiteFit.AI</span>
+              <img 
+                src={logoPath} 
+                alt="RiteFit.AI Logo" 
+                className="h-10 w-auto"
+              />
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
               Dynamic Talent and Technology Enablement firm dedicated to empowering 

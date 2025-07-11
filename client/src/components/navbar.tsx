@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "wouter";
+import logoPath from "@assets/image_1752256527444.png";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -40,10 +41,11 @@ export default function Navbar() {
                 className="flex items-center cursor-pointer"
                 whileHover={{ scale: 1.05 }}
               >
-                <div className="w-10 h-10 gradient-bg rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-xl">R</span>
-                </div>
-                <span className="ml-2 text-xl font-bold text-gray-800">RiteFit.AI</span>
+                <img 
+                  src={logoPath} 
+                  alt="RiteFit.AI Logo" 
+                  className="h-10 w-auto"
+                />
               </motion.div>
             </Link>
           </div>
