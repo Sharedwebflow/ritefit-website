@@ -160,8 +160,8 @@ export default function Academy() {
       </section>
 
       {/* Mission Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 section-ai-bg">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <ScrollReveal>
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-gray-800 mb-6">Our Mission</h2>
@@ -191,8 +191,8 @@ export default function Academy() {
       </section>
 
       {/* Market Challenges */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 neural-network-bg">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
             <ScrollReveal>
               <h2 className="text-4xl font-bold text-gray-800 mb-4">Why RiteFit Academy?</h2>
@@ -235,8 +235,8 @@ export default function Academy() {
       </section>
 
       {/* Program Structure */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 section-ai-bg">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
             <ScrollReveal>
               <h2 className="text-4xl font-bold text-gray-800 mb-4">Program Structure & Highlights</h2>
@@ -281,8 +281,8 @@ export default function Academy() {
       </section>
 
       {/* Curriculum Sections */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 neural-network-bg">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
             <ScrollReveal>
               <h2 className="text-4xl font-bold text-gray-800 mb-4">Curriculum Overview</h2>
@@ -360,8 +360,8 @@ export default function Academy() {
       </section>
 
       {/* Training Includes */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 section-ai-bg">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
             <ScrollReveal>
               <h2 className="text-4xl font-bold text-gray-800 mb-4">Training Price Includes</h2>
@@ -428,8 +428,8 @@ export default function Academy() {
       </section>
 
       {/* Building Cohorts */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 neural-network-bg">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
             <ScrollReveal>
               <h2 className="text-4xl font-bold text-gray-800 mb-4">Building Our Training Cohorts</h2>
@@ -472,8 +472,8 @@ export default function Academy() {
       </section>
 
       {/* Conclusion */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 section-ai-bg">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <ScrollReveal>
             <div className="text-center">
               <GraduationCap className="w-16 h-16 text-blue-600 mx-auto mb-6" />

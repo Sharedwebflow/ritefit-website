@@ -36,8 +36,8 @@ export default function Contact() {
 
       {/* Contact Form Section */}
       <ScrollReveal>
-        <section className="py-16 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
+        <section className="py-16 px-4 sm:px-6 lg:px-8 section-ai-bg">
+          <div className="max-w-4xl mx-auto relative z-10">
             <div className="bg-white rounded-lg shadow-lg p-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Send us a Message</h2>
               <ContactForm />
@@ -48,8 +48,8 @@ export default function Contact() {
 
       {/* Contact Info Section */}
       <ScrollReveal>
-        <section className="py-16 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
+        <section className="py-16 px-4 sm:px-6 lg:px-8 neural-network-bg">
+          <div className="max-w-4xl mx-auto relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-8">Contact Info</h2>
             </div>
