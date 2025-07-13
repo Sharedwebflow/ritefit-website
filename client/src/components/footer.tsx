@@ -12,8 +12,12 @@ export default function Footer() {
               <img 
                 src="/attached_assets/fasfdsdf_1752399539819.png" 
                 alt="RiteFit.AI Logo" 
-                className="h-48 w-auto object-contain"
-                style={{ filter: 'brightness(1.1)' }}
+                className="h-48 w-auto object-cover"
+                style={{ 
+                  filter: 'brightness(1.1)',
+                  objectPosition: 'center',
+                  clipPath: 'inset(25% 0 25% 0)'
+                }}
               />
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
