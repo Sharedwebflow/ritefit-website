@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Facebook, Instagram, Linkedin, Mail, Phone, Globe } from "lucide-react";
-import logoPath from "@assets/image_1752256527444.png";
+// Using direct path reference for footer logo
 
 export default function Footer() {
   return (
@@ -11,9 +11,9 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center mb-4">
               <img 
-                src={logoPath} 
+                src="/attached_assets/Screenshot 2025-07-13 at 2.53.15 PM_1752398599980.png" 
                 alt="RiteFit.AI Logo" 
-                className="h-24 w-auto"
+                className="h-16 w-auto"
               />
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
