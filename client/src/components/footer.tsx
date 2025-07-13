@@ -13,7 +13,7 @@ export default function Footer() {
               <img 
                 src={logoPath} 
                 alt="RiteFit.AI Logo" 
-                className="h-12 w-auto"
+                className="h-24 w-auto"
               />
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
