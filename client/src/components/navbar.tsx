@@ -44,7 +44,7 @@ export default function Navbar() {
                 <img 
                   src={logoPath} 
                   alt="RiteFit.AI Logo" 
-                  className="h-10 w-auto"
+                  className="h-12 w-auto"
                 />
               </motion.div>
             </Link>
