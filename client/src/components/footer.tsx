@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Facebook, Instagram, Linkedin, Mail, Phone, Globe } from "lucide-react";
-// Using direct path reference for footer logo
 
 export default function Footer() {
   return (
