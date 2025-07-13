@@ -10,9 +10,10 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center mb-4">
               <img 
-                src="/attached_assets/Screenshot 2025-07-13 at 2.53.15 PM_1752398599980.png" 
+                src="/attached_assets/fasfdsdf_1752399539819.png" 
                 alt="RiteFit.AI Logo" 
-                className="h-16 w-auto"
+                className="h-12 w-auto object-contain"
+                style={{ filter: 'brightness(1.1)' }}
               />
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
