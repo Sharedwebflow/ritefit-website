@@ -65,7 +65,7 @@ export default function ServicesSection() {
           {services.map((service, index) => (
             <ScrollReveal key={index} delay={index * 0.2}>
               <motion.div
-                className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100"
+                className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100 h-full flex flex-col"
                 whileHover={{ y: -10, boxShadow: "0 25px 50px rgba(0, 0, 0, 0.15)" }}
                 transition={{ duration: 0.3 }}
               >
@@ -77,11 +77,11 @@ export default function ServicesSection() {
                   />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-800 mb-4">{service.title}</h3>
-                <p className="text-gray-600 mb-6">{service.description}</p>
+                <p className="text-gray-600 mb-6 flex-grow">{service.description}</p>
                 <Button
                   variant="ghost"
                   onClick={() => scrollToSection("contact")}
-                  className="text-blue-600 hover:text-cyan-600 font-semibold p-0 h-auto"
+                  className="text-blue-600 hover:text-cyan-600 font-semibold p-0 h-auto mt-auto"
                 >
                   Learn More
                   <ArrowRight className="ml-2 w-4 h-4" />
