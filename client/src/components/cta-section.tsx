@@ -53,13 +53,18 @@ export default function CtaSection() {
                 <Phone className="mr-3 w-5 h-5" />
                 +91 9176690330
               </motion.a>
-              <Button
-                variant="outline"
-                onClick={handleGetInTouch}
-                className="border-2 border-white text-white px-8 py-4 text-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300"
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
               >
-                Get In Touch
-              </Button>
+                <Button
+                  variant="outline"
+                  onClick={handleGetInTouch}
+                  className="border-2 border-white text-white px-8 py-4 text-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300 shadow-lg"
+                >
+                  Get In Touch
+                </Button>
+              </motion.div>
             </div>
           </ScrollReveal>
         </div>
