@@ -4,12 +4,10 @@ import ScrollReveal from "@/components/scroll-reveal";
 import ContactForm from "@/components/contact-form";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
-import BinaryRain from "@/components/binary-rain";
 
 export default function Contact() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white">
-      <BinaryRain />
       <Navbar />
       <div className="pt-20">
       {/* Header Section */}
