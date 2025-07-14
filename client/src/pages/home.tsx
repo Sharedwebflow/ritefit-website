@@ -8,10 +8,12 @@ import CtaSection from "@/components/cta-section";
 import ContactForm from "@/components/contact-form";
 import Footer from "@/components/footer";
 import FloatingElements from "@/components/floating-elements";
+import BinaryRain from "@/components/binary-rain";
 
 export default function Home() {
   return (
     <div className="min-h-screen">
+      <BinaryRain />
       <FloatingElements />
       <Navbar />
       <HeroSection />

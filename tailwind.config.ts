@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Departure Mono", "Inter", "monospace"],
+        sans: ["Inter", "sans-serif"],
         mono: ["Departure Mono", "monospace"],
       },
       borderRadius: {
