@@ -12,8 +12,8 @@ export default function Contact() {
       <div className="pt-20">
       {/* Header Section */}
       <ScrollReveal>
-        <section className="py-20 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-7xl mx-auto text-center">
+        <section className="py-20 px-4 sm:px-6 lg:px-8 ai-circuit-bg">
+          <div className="max-w-7xl mx-auto text-center relative z-10">
             <motion.h1
               className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6"
               initial={{ opacity: 0, y: 20 }}
@@ -110,7 +110,7 @@ export default function Contact() {
 
       {/* Call to Action */}
       <ScrollReveal>
-        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-600 to-cyan-600">
+        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-600 to-cyan-600 ai-grid-bg">
           <div className="max-w-4xl mx-auto text-center">
             <motion.h2
               className="text-3xl sm:text-4xl font-bold text-white mb-6"
