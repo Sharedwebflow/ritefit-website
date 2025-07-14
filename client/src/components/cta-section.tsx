@@ -58,9 +58,8 @@ export default function CtaSection() {
                 whileTap={{ scale: 0.95 }}
               >
                 <Button
-                  variant="outline"
                   onClick={handleGetInTouch}
-                  className="border-2 border-white text-white px-8 py-4 text-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300 shadow-lg"
+                  className="bg-white text-blue-600 border-2 border-white px-8 py-4 text-lg font-semibold hover:bg-blue-50 hover:text-blue-700 transition-all duration-300 shadow-lg"
                 >
                   Get In Touch
                 </Button>
