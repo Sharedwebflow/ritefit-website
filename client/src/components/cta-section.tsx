@@ -4,18 +4,17 @@ import SplitText from "./split-text";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
 import { useInView } from "react-intersection-observer";
+import { useLocation } from "wouter";
 
 export default function CtaSection() {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
+  const [, setLocation] = useLocation();
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+  const handleGetInTouch = () => {
+    setLocation("/contact");
   };
 
   return (
@@ -56,7 +55,7 @@ export default function CtaSection() {
               </motion.a>
               <Button
                 variant="outline"
-                onClick={() => scrollToSection("contact")}
+                onClick={handleGetInTouch}
                 className="border-2 border-white text-white px-8 py-4 text-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300"
               >
                 Get In Touch

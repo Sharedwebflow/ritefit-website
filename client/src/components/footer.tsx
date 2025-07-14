@@ -12,7 +12,7 @@ export default function Footer() {
               <img 
                 src="/attached_assets/Screenshot_2025-07-13_at_3.16.50_PM_1752400013058-removebg-preview_1752464945398.png" 
                 alt="RiteFit.AI Logo" 
-                className="h-16 w-auto object-contain"
+                className="h-12 w-auto object-contain"
                 style={{ filter: 'brightness(1.1)' }}
               />
             </div>
