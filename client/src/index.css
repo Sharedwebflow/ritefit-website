@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Departure Mono Font Face */
+@font-face {
+  font-family: 'Departure Mono';
+  src: url('/attached_assets/DepartureMono-Regular_1752484297829.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --background: hsl(0, 0%, 100%);
   --foreground: hsl(20, 14.3%, 4.1%);
