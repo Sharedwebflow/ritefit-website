@@ -80,7 +80,7 @@ export default function HeroSection() {
 
             {/* Floating Quote Card */}
             <motion.div
-              className="absolute -bottom-6 -left-6 glass-effect rounded-xl p-6 max-w-xs border-4 border-white/40"
+              className="absolute -bottom-6 -left-6 glass-effect rounded-xl p-6 max-w-xs ring-4 ring-white ring-opacity-60"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 3 }}
