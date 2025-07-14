@@ -12,10 +12,10 @@ export default function Contact() {
       <div className="pt-20">
       {/* Header Section */}
       <ScrollReveal>
-        <section className="py-20 px-4 sm:px-6 lg:px-8 ai-circuit-bg">
+        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#0087e1] to-[#0bbc8c] text-white">
           <div className="max-w-7xl mx-auto text-center relative z-10">
             <motion.h1
-              className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6"
+              className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
@@ -23,7 +23,7 @@ export default function Contact() {
               Get In Touch
             </motion.h1>
             <motion.p
-              className="text-xl text-gray-600 max-w-3xl mx-auto mb-12"
+              className="text-xl text-white/90 max-w-3xl mx-auto mb-12"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -36,9 +36,9 @@ export default function Contact() {
 
       {/* Contact Form Section */}
       <ScrollReveal>
-        <section className="py-16 px-4 sm:px-6 lg:px-8 section-ai-bg">
+        <section className="py-16 px-4 sm:px-6 lg:px-8 brand-gradient-light">
           <div className="max-w-4xl mx-auto relative z-10">
-            <div className="bg-white rounded-lg shadow-lg p-12">
+            <div className="bg-white rounded-lg shadow-lg p-12 border-t-4 border-[#0087e1]">
               <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Send us a Message</h2>
               <ContactForm />
             </div>
@@ -48,7 +48,7 @@ export default function Contact() {
 
       {/* Contact Info Section */}
       <ScrollReveal>
-        <section className="py-16 px-4 sm:px-6 lg:px-8 neural-network-bg">
+        <section className="py-16 px-4 sm:px-6 lg:px-8 brand-gradient-medium">
           <div className="max-w-4xl mx-auto relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-8">Contact Info</h2>
@@ -59,13 +59,13 @@ export default function Contact() {
                 className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
                 whileHover={{ scale: 1.02 }}
               >
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                  <Phone className="w-8 h-8 text-blue-600" />
+                <div className="w-16 h-16 bg-gradient-to-br from-[#0087e1] to-[#0bbc8c] rounded-full flex items-center justify-center mb-4">
+                  <Phone className="w-8 h-8 text-white" />
                 </div>
                 <p className="text-gray-500 text-sm mb-2">Phone</p>
                 <a
                   href="tel:+918008256789"
-                  className="text-lg font-semibold text-gray-900 hover:text-blue-600 transition-colors"
+                  className="text-lg font-semibold text-gray-900 hover:text-[#0087e1] transition-colors"
                 >
                   +91 8008256789
                 </a>
@@ -75,13 +75,13 @@ export default function Contact() {
                 className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
                 whileHover={{ scale: 1.02 }}
               >
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                  <Phone className="w-8 h-8 text-blue-600" />
+                <div className="w-16 h-16 bg-gradient-to-br from-[#0087e1] to-[#0bbc8c] rounded-full flex items-center justify-center mb-4">
+                  <Phone className="w-8 h-8 text-white" />
                 </div>
                 <p className="text-gray-500 text-sm mb-2">Mobile</p>
                 <a
                   href="tel:+919176690330"
-                  className="text-lg font-semibold text-gray-900 hover:text-blue-600 transition-colors"
+                  className="text-lg font-semibold text-gray-900 hover:text-[#0087e1] transition-colors"
                 >
                   +91 9176690330
                 </a>
@@ -92,13 +92,13 @@ export default function Contact() {
                 className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
                 whileHover={{ scale: 1.02 }}
               >
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                  <Mail className="w-8 h-8 text-blue-600" />
+                <div className="w-16 h-16 bg-gradient-to-br from-[#0087e1] to-[#0bbc8c] rounded-full flex items-center justify-center mb-4">
+                  <Mail className="w-8 h-8 text-white" />
                 </div>
                 <p className="text-gray-500 text-sm mb-2">Email</p>
                 <a
                   href="mailto:rameshyb@ritefit.ai"
-                  className="text-lg font-semibold text-gray-900 hover:text-blue-600 transition-colors"
+                  className="text-lg font-semibold text-gray-900 hover:text-[#0087e1] transition-colors"
                 >
                   rameshyb@ritefit.ai
                 </a>
@@ -110,7 +110,7 @@ export default function Contact() {
 
       {/* Call to Action */}
       <ScrollReveal>
-        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-600 to-cyan-600 ai-grid-bg">
+        <section className="py-20 px-4 sm:px-6 lg:px-8 brand-gradient-bg">
           <div className="max-w-4xl mx-auto text-center">
             <motion.h2
               className="text-3xl sm:text-4xl font-bold text-white mb-6"

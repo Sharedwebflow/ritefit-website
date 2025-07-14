@@ -24,13 +24,13 @@
   --ring: hsl(20, 14.3%, 4.1%);
   --radius: 0.5rem;
 
-  /* RiteFit.AI Brand Colors */
-  --ritefit-blue: hsl(207, 100%, 50%);
-  --ritefit-green: hsl(160, 100%, 58%);
-  --primary-blue: hsl(207, 100%, 50%);
-  --secondary-blue: hsl(207, 100%, 50%);
-  --accent-teal: hsl(178, 100%, 50%);
-  --accent-green: hsl(160, 100%, 58%);
+  /* RiteFit.AI Brand Colors - Updated from color palette */
+  --ritefit-blue: #0087e1;
+  --ritefit-green: #0bbc8c;
+  --primary-blue: #0087e1;
+  --secondary-blue: #0087e1;
+  --accent-teal: #0bbc8c;
+  --accent-green: #0bbc8c;
   --dark-slate: hsl(215, 28%, 17%);
   --light-gray: hsl(210, 20%, 98%);
   --medium-gray: hsl(215, 16%, 47%);
@@ -98,14 +98,35 @@
 
 @layer utilities {
   .gradient-bg {
-    background: linear-gradient(135deg, var(--ritefit-blue) 0%, var(--ritefit-green) 100%);
+    background: linear-gradient(135deg, #0087e1 0%, #0bbc8c 100%);
   }
 
   .gradient-text {
-    background: linear-gradient(135deg, var(--ritefit-blue) 0%, var(--ritefit-green) 100%);
+    background: linear-gradient(135deg, #0087e1 0%, #0bbc8c 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+  }
+
+  /* New color palette backgrounds */
+  .brand-gradient-bg {
+    background: linear-gradient(135deg, #0087e1 0%, #0bbc8c 100%);
+  }
+
+  .brand-blue-bg {
+    background: #0087e1;
+  }
+
+  .brand-green-bg {
+    background: #0bbc8c;
+  }
+
+  .brand-gradient-light {
+    background: linear-gradient(135deg, rgba(0, 135, 225, 0.1) 0%, rgba(11, 188, 140, 0.1) 100%);
+  }
+
+  .brand-gradient-medium {
+    background: linear-gradient(135deg, rgba(0, 135, 225, 0.2) 0%, rgba(11, 188, 140, 0.2) 100%);
   }
 
   .ai-texture-bg {
