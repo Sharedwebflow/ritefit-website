@@ -200,7 +200,7 @@ export default function Services() {
           <div className="space-y-20">
             {services.map((service, index) => (
               <ScrollReveal key={service.id} delay={index * 0.2}>
-                <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
+                <div id={service.id} className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
                   index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''
                 }`}>
                   <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
@@ -245,13 +245,7 @@ export default function Services() {
                       </div>
                     </div>
 
-                    <Button
-                      onClick={() => scrollToSection("contact")}
-                      className="gradient-bg text-white hover:scale-105 transform transition-all duration-300"
-                    >
-                      Learn More
-                      <ArrowRight className="ml-2 w-4 h-4" />
-                    </Button>
+
                   </div>
                   
                   <div className={index % 2 === 1 ? 'lg:col-start-1' : ''}>

@@ -16,25 +16,29 @@ export default function ServicesSection() {
       title: "Staff Augmentation",
       description: "Our Staff augmentation services provide businesses with flexible access to skilled professionals for temporary or project-based needs. Whether you're looking to fill skill gaps, scale your team, or tap into specialized expertise, our staff augmentation solutions deliver the talent you need, when you need it.",
       image: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
-      alt: "Staff augmentation and team collaboration"
+      alt: "Staff augmentation and team collaboration",
+      linkId: "staff-augmentation"
     },
     {
       title: "HCM Implementation & Consulting",
       description: "Our HCM (Human Capital Management) Implementation & Consulting services help businesses streamline HR processes, improve employee management, and optimize workforce performance. From seamless software integration to strategic consulting, we provide expert guidance to ensure the successful deployment of HCM solutions tailored to your company's needs.",
       image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
-      alt: "HCM implementation and consulting services"
+      alt: "HCM implementation and consulting services",
+      linkId: "hcm-consulting"
     },
     {
       title: "Managed Services (AMS)",
       description: "Our Managed Services (AMS) offer 24/7 technical and functional support for seamless HR technology maintenance. Ensure continuous system performance, faster issue resolution, and optimized HR operations with our expert AMS solutions.",
       image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
-      alt: "Managed services and application maintenance"
+      alt: "Managed services and application maintenance",
+      linkId: "managed-services"
     },
     {
       title: "AI-Powered Workforce Solutions",
       description: "Our AI-Powered Workforce Solutions offer smart hiring tools that use machine learning to streamline recruitment and boost hiring efficiency. Find top talent faster and make data-driven HR decisions with our intelligent solutions.",
       image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
-      alt: "AI-powered workforce solutions and automation"
+      alt: "AI-powered workforce solutions and automation",
+      linkId: "ai-solutions"
     }
   ];
 
@@ -80,7 +84,7 @@ export default function ServicesSection() {
                 <p className="text-gray-600 mb-6 flex-grow">{service.description}</p>
                 <Button
                   variant="ghost"
-                  onClick={() => scrollToSection("contact")}
+                  onClick={() => window.location.href = `/services#${service.linkId}`}
                   className="text-blue-600 hover:text-cyan-600 font-semibold p-0 h-auto mt-auto"
                 >
                   Learn More
