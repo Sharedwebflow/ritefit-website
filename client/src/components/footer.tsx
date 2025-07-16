@@ -84,7 +84,13 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 RiteFit.AI. All rights reserved.</p>
+          <div className="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-8">
+            <p>&copy; 2025 RiteFit.AI. All rights reserved.</p>
+            <div className="flex space-x-4 text-sm">
+              <a href="/privacy" className="hover:text-white transition-colors duration-300">Privacy Policy</a>
+              <a href="/accessibility" className="hover:text-white transition-colors duration-300">Accessibility</a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

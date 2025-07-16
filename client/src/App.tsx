@@ -9,6 +9,8 @@ import About from "@/pages/about";
 import Services from "@/pages/services";
 import Academy from "@/pages/academy";
 import Contact from "@/pages/contact";
+import Privacy from "@/pages/privacy";
+import AccessibilityPage from "@/pages/accessibility";
 
 function Router() {
   return (
@@ -18,6 +20,8 @@ function Router() {
       <Route path="/services" component={Services} />
       <Route path="/academy" component={Academy} />
       <Route path="/contact" component={Contact} />
+      <Route path="/privacy" component={Privacy} />
+      <Route path="/accessibility" component={AccessibilityPage} />
       <Route component={NotFound} />
     </Switch>
   );
