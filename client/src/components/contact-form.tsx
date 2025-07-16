@@ -24,24 +24,39 @@ export default function ContactForm() {
     setIsSubmitting(true);
 
     try {
-      // Here you would typically send the data to your backend
-      // For now, we'll simulate a successful submission
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      toast({
-        title: "Message sent successfully!",
-        description: "We'll get back to you within 24 hours.",
+      const formDataToSend = new FormData();
+      formDataToSend.append("access_key", "YOUR_ACCESS_KEY_HERE"); // Replace with your Web3Forms access key
+      formDataToSend.append("name", formData.name);
+      formDataToSend.append("email", formData.email);
+      formDataToSend.append("phone", formData.phone);
+      formDataToSend.append("company", formData.company);
+      formDataToSend.append("service", formData.service);
+      formDataToSend.append("message", formData.message);
+      formDataToSend.append("subject", "New Contact Form Submission from RiteFit.AI");
+
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formDataToSend
       });
-      
-      // Reset form
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        company: "",
-        service: "",
-        message: ""
-      });
+
+      if (response.ok) {
+        toast({
+          title: "Message sent successfully!",
+          description: "We'll get back to you within 24 hours.",
+        });
+        
+        // Reset form
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          company: "",
+          service: "",
+          message: ""
+        });
+      } else {
+        throw new Error("Failed to send message");
+      }
     } catch (error) {
       toast({
         title: "Error sending message",

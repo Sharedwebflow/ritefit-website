@@ -110,34 +110,40 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Contact form handling
+    // Contact form handling with Web3Forms
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+        contactForm.addEventListener('submit', async function(e) {
             e.preventDefault();
             
             // Get form data
             const formData = new FormData(contactForm);
-            const data = Object.fromEntries(formData);
-            
-            // Show loading state
             const submitButton = contactForm.querySelector('button[type="submit"]');
             const originalText = submitButton.textContent;
+            
+            // Show loading state
             submitButton.textContent = 'Sending...';
             submitButton.disabled = true;
             
-            // Simulate form submission (replace with actual endpoint)
-            setTimeout(() => {
-                // Show success message
-                showMessage('Thank you for your message! We will get back to you soon.', 'success');
+            try {
+                const response = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    body: formData
+                });
                 
-                // Reset form
-                contactForm.reset();
-                
-                // Reset button
+                if (response.ok) {
+                    showMessage('Thank you for your message! We will get back to you within 24 hours.', 'success');
+                    contactForm.reset();
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            } catch (error) {
+                console.error('Error submitting form:', error);
+                showMessage('There was an error sending your message. Please try again or contact us directly.', 'error');
+            } finally {
                 submitButton.textContent = originalText;
                 submitButton.disabled = false;
-            }, 2000);
+            }
         });
     }
 
