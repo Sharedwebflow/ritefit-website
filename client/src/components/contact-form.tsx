@@ -25,7 +25,7 @@ export default function ContactForm() {
 
     try {
       const formDataToSend = new FormData();
-      formDataToSend.append("access_key", "YOUR_ACCESS_KEY_HERE"); // Replace with your Web3Forms access key
+      formDataToSend.append("access_key", "06ee5cc9-fb04-4288-bc38-5854ab34471e");
       formDataToSend.append("name", formData.name);
       formDataToSend.append("email", formData.email);
       formDataToSend.append("phone", formData.phone);
