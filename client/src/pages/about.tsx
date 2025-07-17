@@ -104,6 +104,80 @@ export default function About() {
         </div>
       </section>
 
+      {/* Founders Section */}
+      <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-16">
+            <ScrollReveal>
+              <h2 className="text-4xl font-bold text-gray-800 mb-4">
+                Meet Our Founders & Leadership Team
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Industry experts leading the way in AI-powered workforce solutions
+              </p>
+            </ScrollReveal>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Venkata Gannamaneni */}
+            <ScrollReveal delay={0.1}>
+              <div className="bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
+                <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full mx-auto mb-6 flex items-center justify-center">
+                  <Users className="w-12 h-12 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-2">Venkata Gannamaneni</h3>
+                <p className="text-blue-600 font-medium mb-4">President</p>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  20+ years in enterprise staffing, HR technology, and talent solutions. Expert in scaling organizations and driving strategic growth.
+                </p>
+              </div>
+            </ScrollReveal>
+
+            {/* Krishna Bendapudi */}
+            <ScrollReveal delay={0.2}>
+              <div className="bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
+                <div className="w-24 h-24 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full mx-auto mb-6 flex items-center justify-center">
+                  <Target className="w-12 h-12 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-2">Krishna Bendapudi</h3>
+                <p className="text-purple-600 font-medium mb-4">Founder & Principal Director</p>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  CEO of Rite Software with 25+ years in consulting and technology. Oracle specialist with deep expertise in business solutions architecture.
+                </p>
+              </div>
+            </ScrollReveal>
+
+            {/* Sarveshwar Rao Murari */}
+            <ScrollReveal delay={0.3}>
+              <div className="bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
+                <div className="w-24 h-24 bg-gradient-to-br from-green-500 to-teal-500 rounded-full mx-auto mb-6 flex items-center justify-center">
+                  <Award className="w-12 h-12 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-2">Sarveshwar Rao Murari</h3>
+                <p className="text-green-600 font-medium mb-4">CPO</p>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Creative professional with passion for building the right talent to meet organizational needs. Expert in strategic workforce planning.
+                </p>
+              </div>
+            </ScrollReveal>
+
+            {/* Ramesh B.Y */}
+            <ScrollReveal delay={0.4}>
+              <div className="bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
+                <div className="w-24 h-24 bg-gradient-to-br from-orange-500 to-red-500 rounded-full mx-auto mb-6 flex items-center justify-center">
+                  <Globe className="w-12 h-12 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-2">Ramesh B.Y</h3>
+                <p className="text-orange-600 font-medium mb-4">COO</p>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Specialist in global operations, compliance, and business scalability. Expert in streamlining processes and driving operational excellence.
+                </p>
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
       {/* Stats Section */}
       <section className="py-20 neural-network-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

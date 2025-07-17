@@ -10,6 +10,11 @@ Preferred communication style: Simple, everyday language.
 
 ## Recent Changes
 
+- **July 16, 2025**: Added comprehensive founders section to About page featuring leadership team (Venkata Gannamaneni, Krishna Bendapudi, Sarveshwar Rao Murari, Ramesh B.Y)
+- **July 16, 2025**: Implemented Web3Forms integration for functional contact forms with access key configuration
+- **July 16, 2025**: Enhanced form styling with success/error messages and loading states
+- **July 16, 2025**: Updated service navigation linking home page cards to specific services sections
+- **July 16, 2025**: Added professional styling for founders section with gradient avatars and hover effects
 - **July 14, 2025**: Created complete static HTML website for Hostinger deployment
 - **July 14, 2025**: Converted all React components to static HTML pages (index, about, services, academy, contact)
 - **July 14, 2025**: Applied blue/teal color palette (#0087e1 to #0bbc8c) throughout static website
