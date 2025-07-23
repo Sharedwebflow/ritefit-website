@@ -23,7 +23,7 @@ export default function TestimonialsSection() {
       role: "HR Director",
       company: "TechCorp",
       content: "RiteFit.AI transformed our HR processes completely. Their AI-powered solutions helped us reduce hiring time by 60% and improved our employee satisfaction scores significantly.",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b47c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100",
+      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100",
       rating: 5
     },
     {
