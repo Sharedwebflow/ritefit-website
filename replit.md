@@ -10,6 +10,7 @@ Preferred communication style: Simple, everyday language.
 
 ## Recent Changes
 
+- **July 23, 2025**: Added Vercel deployment configuration as alternative to Railway with easier setup
 - **July 23, 2025**: Connected project to GitHub repository (Sharedwebflow/ritefit-website) and prepared for Railway deployment
 - **July 23, 2025**: Updated homepage quote with authentic content from RiteFit.AI and Rite Digital's staff augmentation services
 - **July 23, 2025**: Fixed founder photo loading issues by copying images to proper public directories
