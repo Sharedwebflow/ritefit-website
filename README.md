@@ -1,153 +1,139 @@
 # RiteFit.AI - Business Website
 
-A modern, responsive business website for RiteFit.AI, a talent and technology enablement firm specializing in AI-driven workforce solutions.
+A modern, professional business website for RiteFit.AI, a talent and technology enablement firm specializing in AI-driven solutions and comprehensive human capital management services.
 
 ## 🚀 Features
 
-- **Modern Design**: Clean, professional interface with AI-themed styling
-- **Responsive Layout**: Optimized for all devices and screen sizes
-- **Interactive Elements**: Smooth animations and scroll effects
-- **Contact Forms**: Functional contact forms with Web3Forms integration
-- **Leadership Team**: Dedicated founders section showcasing the team
-- **Multi-Page Structure**: Home, About, Services, Academy, and Contact pages
-- **Dual Deployment**: Both React SPA and static HTML versions
+- **Modern React Frontend**: Built with React 18, TypeScript, and Tailwind CSS
+- **Express.js Backend**: Full-stack architecture with PostgreSQL database
+- **AI-Themed Design**: Professional blue/teal color palette with animations
+- **Responsive Design**: Mobile-first approach with smooth animations
+- **Interactive Components**: Framer Motion animations and scroll effects
+- **Contact Forms**: Fully functional with Web3Forms integration
+- **Real Founder Photos**: Authentic leadership team presentation
 
-## 🛠️ Technology Stack
+## 🛠 Tech Stack
 
 ### Frontend
-- **React 18** with TypeScript
-- **Tailwind CSS** for styling
-- **Framer Motion** for animations
-- **Wouter** for routing
-- **Radix UI** components
+- React 18 with TypeScript
+- Tailwind CSS + shadcn/ui components
+- Framer Motion for animations
+- TanStack Query for state management
+- Wouter for routing
 
 ### Backend
-- **Express.js** with TypeScript
-- **PostgreSQL** with Drizzle ORM
-- **TanStack Query** for state management
+- Express.js with TypeScript
+- PostgreSQL with Drizzle ORM
+- Session management
+- RESTful API design
 
-### Development
-- **Vite** for build tooling
-- **Hot Module Replacement** for development
-- **ESBuild** for production builds
+## 🌐 Services
 
-## 📁 Project Structure
+- **Staff Augmentation**: Flexible access to skilled professionals
+- **HCM Implementation**: Streamlined HR processes and workforce optimization
+- **Managed Services**: 24/7 technical and functional support
+- **AI-Powered Solutions**: Smart hiring tools with machine learning
 
-```
-├── client/                 # React frontend application
-│   ├── src/
-│   │   ├── components/    # Reusable UI components
-│   │   ├── pages/         # Application pages
-│   │   └── lib/           # Utility functions
-├── server/                # Express backend
-│   ├── routes.ts          # API routes
-│   ├── storage.ts         # Database operations
-│   └── index.ts           # Server entry point
-├── static_website/        # Static HTML version for hosting
-│   ├── *.html            # HTML pages
-│   ├── style.css         # Compiled CSS
-│   ├── script.js         # JavaScript functionality
-│   └── .htaccess         # Apache configuration
-├── shared/               # Shared TypeScript schemas
-└── attached_assets/      # Logo and brand assets
-```
+## 🚀 Quick Deploy to Railway
 
-## 🚀 Getting Started
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/your-template-id)
+
+### Manual Railway Deployment
+
+1. **Fork this repository**
+2. **Connect to Railway**:
+   - Go to [Railway](https://railway.app)
+   - Click "New Project" → "Deploy from GitHub repo"
+   - Select this repository
+3. **Environment Variables**:
+   ```
+   DATABASE_URL=postgresql://...  (Railway will provide this)
+   NODE_ENV=production
+   ```
+4. **Deploy**: Railway will automatically build and deploy your application
+
+## 💻 Local Development
 
 ### Prerequisites
-- Node.js (v18 or higher)
+- Node.js 18+ 
 - PostgreSQL database
-- Git
 
-### Installation
-
-1. **Clone the repository**
+### Setup
+1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/ritefit-website.git
+   git clone <your-repo-url>
    cd ritefit-website
    ```
 
-2. **Install dependencies**
+2. **Install dependencies**:
    ```bash
    npm install
    ```
 
-3. **Set up environment variables**
-   Create a `.env` file in the root directory:
-   ```env
-   DATABASE_URL=your_postgresql_connection_string
+3. **Environment setup**:
+   ```bash
+   # Create .env file with:
+   DATABASE_URL=postgresql://username:password@localhost:5432/ritefit
    NODE_ENV=development
    ```
 
-4. **Start the development server**
+4. **Database setup**:
+   ```bash
+   npm run db:push
+   ```
+
+5. **Start development server**:
    ```bash
    npm run dev
    ```
 
-The application will be available at `http://localhost:5000`
+6. **Open browser**: Navigate to `http://localhost:5000`
 
-## 📦 Available Scripts
+## 📦 Build Commands
 
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
 - `npm run start` - Start production server
 - `npm run db:push` - Update database schema
 
-## 🌐 Static Website Deployment
+## 🌟 Key Features
 
-The `static_website/` directory contains a complete static HTML version ready for deployment on:
-- **Hostinger** (recommended)
-- **Netlify**
-- **Vercel**
-- **GitHub Pages**
-- Any static hosting provider
+### Professional Design
+- Clean, modern interface with AI-themed backgrounds
+- Professional color scheme and typography
+- Smooth animations and micro-interactions
 
-### Quick Deploy to Hostinger
-1. Download `ritefit-website.tar.gz` from the `static_website/` folder
-2. Extract and upload files to your hosting provider
-3. Update the Web3Forms access key in contact forms if needed
+### Real Content
+- Authentic founder photos and company information
+- Service descriptions based on actual offerings
+- Professional testimonials and case studies
 
-## 🔧 Configuration
+### Performance Optimized
+- Server-side rendering ready
+- Optimized animations and images
+- Fast loading times
 
-### Contact Forms
-The contact forms use Web3Forms for email delivery. To configure:
+## 📱 Pages
 
-1. Sign up at [Web3Forms](https://web3forms.com)
-2. Get your access key
-3. Update the access key in:
-   - `client/src/components/contact-form.tsx`
-   - `static_website/contact.html`
+- **Home**: Hero section, services overview, testimonials
+- **About**: Company mission, founder profiles, statistics
+- **Services**: Detailed service descriptions and processes
+- **Academy**: Training programs and curriculum
+- **Contact**: Contact forms and company information
 
-### Database Setup
-The application uses PostgreSQL with Drizzle ORM. Schema is defined in `shared/schema.ts`.
+## 🔧 Deployment Options
 
-## 🎨 Customization
+- **Railway** (Recommended): Full-stack deployment with database
+- **Vercel**: Frontend deployment with serverless functions
+- **Render**: Full-stack deployment alternative
+- **Static Hosting**: Pre-built static version available
 
-### Colors
-The website uses a blue/teal gradient color palette:
-- Primary: `#0087e1` to `#0bbc8c`
-- Update colors in `tailwind.config.ts` and `static_website/style.css`
+## 📞 Contact
 
-### Content
-- Update company information in the respective page files
-- Replace logo in `attached_assets/` directory
-- Modify founders information in about pages
-
-## 🚀 Leadership Team
-
-- **Venkata Gannamaneni** - President
-- **Krishna Bendapudi** - Founder & Principal Director  
-- **Sarveshwar Rao Murari** - CPO
-- **Ramesh B.Y** - COO
+- **Website**: [ritefit.ai](https://ritefit.ai)
+- **Email**: info@ritefit.ai
+- **Phone**: +919176690330
 
 ## 📄 License
 
-This project is proprietary software for RiteFit.AI.
-
-## 🤝 Support
-
-For support and inquiries, contact RiteFit.AI through the website contact form or reach out to the development team.
-
----
-
-Built with ❤️ by the RiteFit.AI team
+© 2025 RiteFit.AI. All rights reserved.
