@@ -14,7 +14,7 @@ export default function TestimonialsSection() {
       name: "Leroy Lawson",
       role: "CEO",
       company: "L&L",
-      content: "Bibendum accumsan commodo fermentum facilisis. Dapibus enim pulvinar leo ut aliquam. Nunc diam dolor nec placerat mattis magna netus egestas fusce.",
+      content: "RiteFit.AI transformed our hiring process with their AI-powered workforce solutions. We found top talent at a fraction of traditional costs while maintaining excellent quality standards.",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100",
       rating: 5
     },

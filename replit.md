@@ -10,6 +10,8 @@ Preferred communication style: Simple, everyday language.
 
 ## Recent Changes
 
+- **July 23, 2025**: Updated homepage quote with authentic content from RiteFit.AI and Rite Digital's staff augmentation services
+- **July 23, 2025**: Fixed founder photo loading issues by copying images to proper public directories
 - **July 22, 2025**: Added real founder photos (Venkata, Krishna, Ramesh) to About section in both React and static versions
 - **July 22, 2025**: Created complete static website matching React version exactly using build output CSS
 - **July 22, 2025**: Added VS Code/Cursor local development setup with debugging configuration

@@ -89,7 +89,7 @@ export default function HeroSection() {
                 <Quote className="text-blue-600 w-8 h-8" />
               </div>
               <p className="text-sm text-gray-700">
-                "Ritefit AI Pvt. Ltd. will position itself to win a good deal of that emerging business."
+                "Get access to top talent at a fraction of the cost of traditional hiring. When you change the way you look at things, the things you look at change."
               </p>
             </motion.div>
           </div>
