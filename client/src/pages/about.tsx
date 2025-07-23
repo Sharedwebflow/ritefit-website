@@ -124,7 +124,7 @@ export default function About() {
               <div className="bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
                 <div className="w-24 h-24 rounded-full mx-auto mb-6 overflow-hidden">
                   <img 
-                    src="@assets/Ventaka_1753251492982.png" 
+                    src="/venkata.png" 
                     alt="Venkata Gannamaneni" 
                     className="w-full h-full object-cover"
                   />
@@ -142,7 +142,7 @@ export default function About() {
               <div className="bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
                 <div className="w-24 h-24 rounded-full mx-auto mb-6 overflow-hidden">
                   <img 
-                    src="@assets/image_1753251529314.png" 
+                    src="/krishna.png" 
                     alt="Krishna Bendapudi" 
                     className="w-full h-full object-cover"
                   />
@@ -174,7 +174,7 @@ export default function About() {
               <div className="bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
                 <div className="w-24 h-24 rounded-full mx-auto mb-6 overflow-hidden">
                   <img 
-                    src="@assets/Ramesh YB_1753251602651.jpg" 
+                    src="/ramesh.jpg" 
                     alt="Ramesh B.Y" 
                     className="w-full h-full object-cover"
                   />
