@@ -122,8 +122,12 @@ export default function About() {
             {/* Venkata Gannamaneni */}
             <ScrollReveal delay={0.1}>
               <div className="bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
-                <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full mx-auto mb-6 flex items-center justify-center">
-                  <Users className="w-12 h-12 text-white" />
+                <div className="w-24 h-24 rounded-full mx-auto mb-6 overflow-hidden">
+                  <img 
+                    src="@assets/Ventaka_1753251492982.png" 
+                    alt="Venkata Gannamaneni" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-2">Venkata Gannamaneni</h3>
                 <p className="text-blue-600 font-medium mb-4">President</p>
@@ -136,8 +140,12 @@ export default function About() {
             {/* Krishna Bendapudi */}
             <ScrollReveal delay={0.2}>
               <div className="bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
-                <div className="w-24 h-24 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full mx-auto mb-6 flex items-center justify-center">
-                  <Target className="w-12 h-12 text-white" />
+                <div className="w-24 h-24 rounded-full mx-auto mb-6 overflow-hidden">
+                  <img 
+                    src="@assets/image_1753251529314.png" 
+                    alt="Krishna Bendapudi" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-2">Krishna Bendapudi</h3>
                 <p className="text-purple-600 font-medium mb-4">Founder & Principal Director</p>
@@ -164,8 +172,12 @@ export default function About() {
             {/* Ramesh B.Y */}
             <ScrollReveal delay={0.4}>
               <div className="bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
-                <div className="w-24 h-24 bg-gradient-to-br from-orange-500 to-red-500 rounded-full mx-auto mb-6 flex items-center justify-center">
-                  <Globe className="w-12 h-12 text-white" />
+                <div className="w-24 h-24 rounded-full mx-auto mb-6 overflow-hidden">
+                  <img 
+                    src="@assets/Ramesh YB_1753251602651.jpg" 
+                    alt="Ramesh B.Y" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-2">Ramesh B.Y</h3>
                 <p className="text-orange-600 font-medium mb-4">COO</p>

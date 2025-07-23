@@ -10,6 +10,7 @@ Preferred communication style: Simple, everyday language.
 
 ## Recent Changes
 
+- **July 22, 2025**: Added real founder photos (Venkata, Krishna, Ramesh) to About section in both React and static versions
 - **July 22, 2025**: Created complete static website matching React version exactly using build output CSS
 - **July 22, 2025**: Added VS Code/Cursor local development setup with debugging configuration
 - **July 22, 2025**: Generated final deployment package (ritefit-static-website.tar.gz) ready for Hostinger
